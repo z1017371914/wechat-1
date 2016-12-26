@@ -40,5 +40,5 @@ func hello(ctx *context.Context) {
 
 func main() {
 	beego.Any("/", hello)
-	beego.Run(":8001")
+	beego.Run(":80")
 }
