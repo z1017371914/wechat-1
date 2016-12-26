@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
 	"github.com/silenceper/wechat"
@@ -12,10 +11,10 @@ import (
 func hello(ctx *context.Context) {
 	//配置微信参数
 	config := &wechat.Config{
-		AppID:          "your app id",
-		AppSecret:      "your app secret",
-		Token:          "your token",
-		EncodingAESKey: "your encoding aes key",
+		AppID:          "wx60bf1662294a3444",
+		AppSecret:      "1f3f1f506e63c4bcd0c2f2d88281cf33",
+		Token:          "huxuesongtoken",
+		EncodingAESKey: "EAOxf3lgmlfLzFsyZm346qXA9joUuG9Nmll7HUHNUep",
 	}
 	wc := wechat.NewWechat(config)
 
