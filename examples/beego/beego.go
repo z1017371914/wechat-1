@@ -61,7 +61,8 @@ func hello(ctx *context.Context) {
 		case message.MsgTypeEvent:
 			fmt.Print("事件推送消息")
 		}
-		return &message.Reply{message.MsgTypeText, text}
+		return &message.Reply{message.MsgTypeLink ,message.NewArticle("那个嫁给了穷人的女同学", "爆漫画", "http://zxpic.gtimg.com/infonew/0/wechat_pics_-10190065.static/640", "http://v.juhe.cn/weixin/redirect?wid=wechat_20161226038185")}
+		//return &message.Reply{message.MsgTypeText, text}
 	})
 
 	//处理消息接收以及回复
