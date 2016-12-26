@@ -32,7 +32,7 @@ func hello(ctx *context.Context) {
 		case message.MsgTypeText:
 		//do something
 			fmt.Print("文本消息")
-			text = message.NewArticle("那个嫁给了穷人的女同学", "爆漫画", "http://zxpic.gtimg.com/infonew/0/wechat_pics_-10190065.static/640", "http://v.juhe.cn/weixin/redirect?wid=wechat_20161226038185")
+			return &message.Reply{message.NewArticle("那个嫁给了穷人的女同学", "爆漫画", "http://zxpic.gtimg.com/infonew/0/wechat_pics_-10190065.static/640", "http://v.juhe.cn/weixin/redirect?wid=wechat_20161226038185")}
 		//图片消息
 		case message.MsgTypeImage:
 		//do something
