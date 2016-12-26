@@ -25,7 +25,7 @@ func hello(ctx *context.Context) {
 
 		//回复消息：演示回复用户发送的消息
 
-		text := message.NewText("我已收到您的消息会尽快处理")
+		//text := message.NewText("我已收到您的消息会尽快处理")
 
 		switch msg.MsgType {
 		//文本消息
