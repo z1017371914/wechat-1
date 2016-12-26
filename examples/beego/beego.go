@@ -39,6 +39,6 @@ func hello(ctx *context.Context) {
 }
 
 func main() {
-	beego.Any("/", hello)
+	beego.Any("/wx_connect", hello)
 	beego.Run(":80")
 }
